@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the user can sign up successfully after entering valid input values and account is verified</description>
+   <name>SU-06_verify_Signup_success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55857c27-1ed3-4a46-8441-4d07c6a323ea</testCaseGuid>
+</TestCaseEntity>

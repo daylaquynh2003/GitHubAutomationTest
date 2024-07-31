@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the user can not sign up successfully with an invalid email</description>
+   <name>SU-07_verify_signup_fail_by_email</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c285f924-0fd7-495f-afe4-ef5894a99cc0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d47d0007-3478-4455-8d8f-5e6a6ab13b2d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e92fa4fd-ec1a-4ab6-99ee-723615503f6e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d47d0007-3478-4455-8d8f-5e6a6ab13b2d</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e92fa4fd-ec1a-4ab6-99ee-723615503f6e</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

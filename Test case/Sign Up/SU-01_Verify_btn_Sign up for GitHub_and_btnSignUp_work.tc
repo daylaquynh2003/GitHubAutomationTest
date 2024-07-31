@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the  &quot;Sign up for GitHub&quot; button and the &quot;Sign up&quot; tag work correctly</description>
+   <name>SU-01_Verify_btn_Sign up for GitHub_and_btnSignUp_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0cabc291-3d97-476e-8612-2260753f1388</testCaseGuid>
+</TestCaseEntity>

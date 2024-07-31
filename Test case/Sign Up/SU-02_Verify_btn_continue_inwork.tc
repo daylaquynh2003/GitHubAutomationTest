@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Continue&quot; button works when the values ​​entered in the required fields are valid</description>
+   <name>SU-02_Verify_btn_continue_inwork</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b8e77a5f-d77f-49e3-9779-1aee5856dad7</testCaseGuid>
+</TestCaseEntity>
