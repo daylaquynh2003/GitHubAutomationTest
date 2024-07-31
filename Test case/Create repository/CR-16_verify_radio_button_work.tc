@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Public&quot; and &quot;Private&quot; radio buttons work correctly</description>
+   <name>CR-16_verify_radio_button_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dd6b20a3-6805-4b5c-af41-c8c505d5dd31</testCaseGuid>
+</TestCaseEntity>

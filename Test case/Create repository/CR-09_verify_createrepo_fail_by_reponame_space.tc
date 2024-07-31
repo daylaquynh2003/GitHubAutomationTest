@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the user can not create respository successfully with the &quot;Respository name&quot; textbox is space</description>
+   <name>CR-09_verify_createrepo_fail_by_reponame_space</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ad52f17a-bec0-4187-ab13-5798914b91f3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>81b5fd3d-3588-4eab-8403-576a8afde69f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1ea621f3-dce6-4226-8ee5-a6ea421e82da</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>81b5fd3d-3588-4eab-8403-576a8afde69f</id>
+      <masked>false</masked>
+      <name>repo_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1ea621f3-dce6-4226-8ee5-a6ea421e82da</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

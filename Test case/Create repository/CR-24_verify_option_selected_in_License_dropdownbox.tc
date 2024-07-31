@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Choose a license&quot; dropdown list works correctly</description>
+   <name>CR-24_verify_option_selected_in_License_dropdownbox</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d4f6018-ce56-4f66-998d-0bf1a7acbaae</testCaseGuid>
+</TestCaseEntity>

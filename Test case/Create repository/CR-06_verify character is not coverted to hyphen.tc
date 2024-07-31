@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the value contains the characters ., -, _  is not converted to one hyphen</description>
+   <name>CR-06_verify character is not coverted to hyphen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0d778814-110d-4319-8543-8b586fa1f5b1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>010ff945-22a7-41df-90cd-ec97bab47e12</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>25ddddde-e9aa-4c99-8e12-0af17926412d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>010ff945-22a7-41df-90cd-ec97bab47e12</id>
+      <masked>false</masked>
+      <name>repo_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>25ddddde-e9aa-4c99-8e12-0af17926412d</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

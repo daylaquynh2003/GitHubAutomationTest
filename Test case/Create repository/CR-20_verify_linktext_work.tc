@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Learn more about ignoring files&quot; linktext there is activity</description>
+   <name>CR-20_verify_linktext_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>668aae87-d82b-418f-bb05-e2bc4d3078bd</testCaseGuid>
+</TestCaseEntity>

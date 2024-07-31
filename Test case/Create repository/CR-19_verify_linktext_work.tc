@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Learn more about READMEs.&quot; linktext there is activity</description>
+   <name>CR-19_verify_linktext_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9a7bb109-6a3e-4291-ae0b-53acbf2acfed</testCaseGuid>
+</TestCaseEntity>

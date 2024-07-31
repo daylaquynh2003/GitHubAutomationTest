@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the user can create new repository successfully with a valid value in the &quot;Description&quot; textbox</description>
+   <name>CR-13_verify_create_repo_fail_by_invalid_description</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9ca39647-5306-4040-9e1e-204fcafba19b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7777c913-0e2b-4036-b95f-f6105a72a034</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>71bb211b-f557-4853-b848-f3033f0493cc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7777c913-0e2b-4036-b95f-f6105a72a034</id>
+      <masked>false</masked>
+      <name>repo_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>71bb211b-f557-4853-b848-f3033f0493cc</id>
+      <masked>false</masked>
+      <name>description</name>
+   </variable>
+</TestCaseEntity>

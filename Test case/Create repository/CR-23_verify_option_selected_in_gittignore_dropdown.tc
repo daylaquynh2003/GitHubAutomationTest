@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Add .gitignore&quot; dropdown list works correctly&#xd;
+Step condition to perform: Select on option</description>
+   <name>CR-23_verify_option_selected_in_gittignore_dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f36d66b-4a05-4835-a62f-d66de80a8733</testCaseGuid>
+</TestCaseEntity>

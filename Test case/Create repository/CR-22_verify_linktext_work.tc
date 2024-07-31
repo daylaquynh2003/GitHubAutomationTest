@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Learn more about licenses&quot; linktext there is activity</description>
+   <name>CR-22_verify_linktext_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ccb08825-fe69-4ee4-9ca4-2f347e8df13f</testCaseGuid>
+</TestCaseEntity>

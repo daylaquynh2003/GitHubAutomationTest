@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Add a README file&quot; checkbox work correctly</description>
+   <name>CR-17_verify_checkbox_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ff58dff-128a-4baf-a0e8-f8f56fbacf43</testCaseGuid>
+</TestCaseEntity>

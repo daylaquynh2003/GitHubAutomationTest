@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the user can not create respository successfully with an invalid respository name</description>
+   <name>CR-04-verify_create_repo_fail_by_repo-name-invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>56693120-b9cf-4225-9ffa-8b881822d00c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f5518d23-c5b7-42fb-8d35-3e4a6a604a04</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f68f51b4-3c5c-4fb7-9239-7953da1fa219</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f5518d23-c5b7-42fb-8d35-3e4a6a604a04</id>
+      <masked>false</masked>
+      <name>repo_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f68f51b4-3c5c-4fb7-9239-7953da1fa219</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

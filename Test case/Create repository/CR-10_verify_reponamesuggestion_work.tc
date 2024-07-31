@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the repository name suggestion button works correctly</description>
+   <name>CR-10_verify_reponamesuggestion_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>588c628e-d0f9-4b3d-8f58-d240b90de4ac</testCaseGuid>
+</TestCaseEntity>

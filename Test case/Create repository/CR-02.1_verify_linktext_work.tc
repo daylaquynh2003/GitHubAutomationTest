@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Import a repository&quot; linktext there is activity</description>
+   <name>CR-02.1_verify_linktext_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4bac2819-355a-4af3-aad1-1b029cb5986e</testCaseGuid>
+</TestCaseEntity>

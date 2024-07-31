@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the value contains spaces and special characters:  &quot; ;!, #, %, ^, &amp;, *, (, ), [, ], {, }, |, , :, ;, &quot;, ', &lt;, > , , , ?, /, =&quot; except the characters ., -, _  is converted to hyphen</description>
+   <name>CR-05_verify-convert-to-hyphen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ca9a534-d229-4518-beb4-3e3890189591</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>496c6254-ad42-4436-85bd-8d0b07225f1f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ca786e83-07c7-4a7c-bb6c-d514fb8ed906</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>496c6254-ad42-4436-85bd-8d0b07225f1f</id>
+      <masked>false</masked>
+      <name>repo_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ca786e83-07c7-4a7c-bb6c-d514fb8ed906</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

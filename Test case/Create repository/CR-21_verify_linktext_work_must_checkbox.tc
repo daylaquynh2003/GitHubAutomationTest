@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Settings&quot; linktext there is activity</description>
+   <name>CR-21_verify_linktext_work_must_checkbox</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>24fbab08-2637-4552-84db-0a2e2ff93f29</testCaseGuid>
+</TestCaseEntity>
