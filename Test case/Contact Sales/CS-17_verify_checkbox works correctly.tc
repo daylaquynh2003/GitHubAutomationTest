@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the checkbox works correctly</description>
+   <name>CS-17_verify_checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8dd4b7c6-f07b-46e5-a0e7-c3f5dea296f4</testCaseGuid>
+</TestCaseEntity>

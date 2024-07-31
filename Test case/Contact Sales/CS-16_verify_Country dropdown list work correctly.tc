@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the Country dropdown list work correctly</description>
+   <name>CS-16_verify_Country dropdown list work correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>879e5918-b496-479b-97f7-4b42a66fd791</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the Contact Sales button works correctly</description>
+   <name>CS-01_verify_Contact Sales button works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>371c9e5e-67be-4e76-a3f8-a4490749f37d</testCaseGuid>
+</TestCaseEntity>

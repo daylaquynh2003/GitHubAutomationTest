@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Contact Enterprise support.&quot; linktext there is activity</description>
+   <name>CS-19_verify_Contact Enterprise support linktext activity</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e1c07c20-d78c-4638-8a81-b50986fe9579</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;GitHub Privacy Statement&quot; linktext there is activity</description>
+   <name>CS-18_verifyGitHub Privacy Statement linktext_activity</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf20b39f-34e8-4c21-8b91-b434d84b124d</testCaseGuid>
+</TestCaseEntity>
