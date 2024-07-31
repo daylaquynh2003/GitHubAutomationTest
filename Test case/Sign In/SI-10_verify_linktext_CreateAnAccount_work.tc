@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Create an account&quot; link there is activity</description>
+   <name>SI-10_verify_linktext_CreateAnAccount_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>63d206b6-cd1e-4842-b7d4-bf193283b586</testCaseGuid>
+</TestCaseEntity>

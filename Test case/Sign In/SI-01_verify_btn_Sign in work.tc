@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Sign in&quot; button is work correctly</description>
+   <name>SI-01_verify_btn_Sign in work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2a9d030d-a023-4ef4-b2d0-d1808e508150</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>-SI-03: Verify that the user sign in unsuccessfully with invalid username (Enter the username does not exist) &#xd;
+-SI-04: Verify that the user sign in unsuccessfully with invalid email address (Enter the email address does not exist)&#xd;
+-SI-05: Verify that the user sign in unsuccessfully with invalid password (Enter the password does not exist)&#xd;
+-SI-06: Verify that the user sign in unsuccessfully with invalid username and password (Enter the username (or email) and password does not exist)</description>
+   <name>SI-03_invalid_value</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55b63ce4-9019-4403-95da-e68cd11e60a4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c1355f38-7ad0-417f-81a4-bbb67121e023</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>98641b5c-bf49-4abf-be16-b7a3b431c382</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d7f876e6-d8a5-4c87-8e9b-2f5639ba5ea9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c1355f38-7ad0-417f-81a4-bbb67121e023</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>98641b5c-bf49-4abf-be16-b7a3b431c382</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d7f876e6-d8a5-4c87-8e9b-2f5639ba5ea9</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

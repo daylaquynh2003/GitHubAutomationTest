@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the user sign in successfully with valid account</description>
+   <name>SI-02_signin_success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>953124f1-6f20-43a7-9b59-eaa7ac643088</testCaseGuid>
+</TestCaseEntity>
