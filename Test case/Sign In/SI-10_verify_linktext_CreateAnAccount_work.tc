@@ -1,9 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the &quot;Create an account&quot; link there is activity</description>
-   <name>SI-10_verify_linktext_CreateAnAccount_work</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>63d206b6-cd1e-4842-b7d4-bf193283b586</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+//
+//WebUI.openBrowser('')
+//
+'SI-10: Verify that the "Create an account" link there is activity'
+
+'Step 1: navigate to github.com/login'
+WebUI.navigateToUrl('https://github.com/login')
+
+'Step 2: click on the Create an account linktext'
+String str_value_containstext_a = 'Create an account'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_a',[('containstext_value_in_a'):str_value_containstext_a]))
+
+'Step 3: verify that the Sign up page is displayed'
+String str_value_containstext_span = 'Welcome to GitHub!'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_contains-text_in_span',[('containstext_value_in_span'):str_value_containstext_span]), 0)
+
+'Step 4: take the screenshot'
+WebUI.takeScreenshot()
