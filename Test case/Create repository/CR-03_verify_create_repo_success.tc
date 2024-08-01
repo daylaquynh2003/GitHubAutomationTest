@@ -1,35 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the user can create respository successfully with a valid respository name</description>
-   <name>CR-03_verify_create_repo_success</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>28427116-48e3-4e55-a43e-2792f02eaf88</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2e1426a8-96ed-49b5-8f62-baa1f3e51388</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>b89e24ef-800e-4c67-9247-58043a0f7bae</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>2e1426a8-96ed-49b5-8f62-baa1f3e51388</id>
-      <masked>false</masked>
-      <name>repo_name</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>b89e24ef-800e-4c67-9247-58043a0f7bae</id>
-      <masked>false</masked>
-      <name>description</name>
-   </variable>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'CR-03: Verify that the user can create respository successfully with a valid respository name'
+
+//WebUI.openBrowser('')
+//
+//WebUI.navigateToUrl('https://github.com/login')
+//
+//WebUI.maximizeWindow()
+//
+//WebUI.setText(findTestObject('null'), 
+//    'daylaquynh2003')
+//
+//WebUI.setText(findTestObject('null'), 'th1s+1s+pass')
+//
+//WebUI.click(findTestObject('null'))
+//'Step 1: call test case SI-02 to SignIn'
+//WebUI.callTestCase(findTestCase('Calltest_SI-02-Signin success'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Step 2: Click the new btn'
+//String str_value_btn = 'New'
+//WebUI.click(findTestObject('null', [('name_btn') : str_value_btn]))
+//
+//'Step 3: Verify that the system navigates to the "Create a new repository" page'
+//WebUI.verifyElementPresent(findTestObject('null'), 
+//    0)
+'Step 1: rollback to create repository page'
+WebUI.navigateToUrl('https://github.com/new')
+
+'Step 2: Click the Owner list'
+String value1_containstext_span = 'Choose an owner'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : value1_containstext_span]))
+
+'Step 3: Select one option'
+String value2_containstext_span = 'chillcunglang2'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : value2_containstext_span]))
+
+'Step 4: Enter a valid repository name'
+String str1_value_class_span_inp = 'TextInputWrapper__TextInputBaseWrapper-sc-1mqhpbi-0 TextInputWrapper-sc-1mqhpbi-1 LWeZl cYukEn TextInput-wrapper'
+
+WebUI.setText(findTestObject('dynamic_by_class_in_span-inp', [('class_value_in_span-inp') : str1_value_class_span_inp]), 
+    repo_name)
+
+'Step 5: Enter a valid description'
+String str2_value_class_span_inp = 'TextInputWrapper__TextInputBaseWrapper-sc-1mqhpbi-0 TextInputWrapper-sc-1mqhpbi-1 kjCeos cYukEn TextInput-wrapper'
+
+WebUI.setText(findTestObject('dynamic_by_class_in_span-inp', [('class_value_in_span-inp') : str2_value_class_span_inp]), 
+    description)
+
+'Step 6: Click the Create repository btn'
+String str_value_containstext_span = 'Create repository'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : str_value_containstext_span]))
+
+'Step 7: verify that the repository was created successfull'
+String str_value_id_a = 'insights-tab'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_a', [('id_value_in_a') : str_value_id_a]), 0)
+
+
+'Step 8: take the screenshot'
+WebUI.takeScreenshot()
