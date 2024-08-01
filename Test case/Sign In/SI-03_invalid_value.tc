@@ -1,51 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>-SI-03: Verify that the user sign in unsuccessfully with invalid username (Enter the username does not exist) &#xd;
--SI-04: Verify that the user sign in unsuccessfully with invalid email address (Enter the email address does not exist)&#xd;
--SI-05: Verify that the user sign in unsuccessfully with invalid password (Enter the password does not exist)&#xd;
--SI-06: Verify that the user sign in unsuccessfully with invalid username and password (Enter the username (or email) and password does not exist)</description>
-   <name>SI-03_invalid_value</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>55b63ce4-9019-4403-95da-e68cd11e60a4</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>c1355f38-7ad0-417f-81a4-bbb67121e023</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>98641b5c-bf49-4abf-be16-b7a3b431c382</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>d7f876e6-d8a5-4c87-8e9b-2f5639ba5ea9</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>c1355f38-7ad0-417f-81a4-bbb67121e023</id>
-      <masked>false</masked>
-      <name>username</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>98641b5c-bf49-4abf-be16-b7a3b431c382</id>
-      <masked>false</masked>
-      <name>password</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>d7f876e6-d8a5-4c87-8e9b-2f5639ba5ea9</id>
-      <masked>false</masked>
-      <name>msg_expected</name>
-   </variable>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+
+'SI-03:Verify that the user sign in unsuccessfully with invalid value'
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://github.com/login')
+
+WebUI.maximizeWindow()
+
+'Step 1: navgate to github.com/login'
+WebUI.navigateToUrl('https://github.com/login')
+
+'Step 2: Enter an invalid username in the Username or email address textbox'
+String str1_value_id_inp = 'login_field'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):str1_value_id_inp]), username)
+
+'Step 3: Enter an invalid password in the Password textbox'
+String str2_value_id_inp = 'password'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):str2_value_id_inp]), password)
+
+'Step 4: Click the Sign in button'
+String str_value_name_inp = 'commit'
+
+WebUI.click(findTestObject('dynamic_by_name_in_inp',[('name_value_in_inp'):str_value_name_inp]))
+
+'Step 5: delay for 3 seconds to see the error message'
+WebUI.delay(3)
+
+'Step 6: Verify that the error message is displayed'
+WebUI.verifyTextPresent(msg_expected, false)
+
+'Step 7: take the screenshot'
+WebUI.takeScreenshot()
+
