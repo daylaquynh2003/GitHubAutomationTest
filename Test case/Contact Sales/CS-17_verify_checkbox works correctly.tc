@@ -1,9 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the checkbox works correctly</description>
-   <name>CS-17_verify_checkbox works correctly</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8dd4b7c6-f07b-46e5-a0e7-c3f5dea296f4</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'CS-17: Verify that the checkbox: Yes please...for more details works correctly'
+'Step 1: Check the checkbox'
+String value1_id_inp = 'site_enterprise_contact_request[marketing_email_opt_in]'
+WebUI.check(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):value1_id_inp]))
+
+'Step 2: Verify that the checkbox is checked'
+String value2_id_inp = 'site_enterprise_contact_request[marketing_email_opt_in]'
+WebUI.verifyElementChecked(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):value2_id_inp]), 0)
+
+'Step 3: take the screenshot'
+WebUI.takeScreenshot()
+
+'Step 4: Uncheck the checkbox'
+String value3_id_inp = 'site_enterprise_contact_request[marketing_email_opt_in]'
+WebUI.uncheck(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):value3_id_inp]))
+
+'Step 5: Verify that the checkbox can be unchecked'
+String value4_id_inp = 'site_enterprise_contact_request[marketing_email_opt_in]'
+WebUI.verifyElementNotChecked(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):value4_id_inp]), 0)
+'Step 6: take the screenshot'
+WebUI.takeScreenshot()
