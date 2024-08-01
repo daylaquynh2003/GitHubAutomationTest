@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the user can not sign up successfully with an invalid email</description>
-   <name>SU-07_verify_signup_fail_by_email</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>c285f924-0fd7-495f-afe4-ef5894a99cc0</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>d47d0007-3478-4455-8d8f-5e6a6ab13b2d</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>e92fa4fd-ec1a-4ab6-99ee-723615503f6e</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>d47d0007-3478-4455-8d8f-5e6a6ab13b2d</id>
-      <masked>false</masked>
-      <name>email</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>e92fa4fd-ec1a-4ab6-99ee-723615503f6e</id>
-      <masked>false</masked>
-      <name>msg_expected</name>
-   </variable>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+//WebUI.openBrowser('')
+//
+//WebUI.navigateToUrl('https://github.com/signup')
+//
+//WebUI.maximizeWindow()
+'SU-07: Verify that the user can not sign up successfully with an invalid email'
+'Step 1: navigate to github.com/signup'
+WebUI.navigateToUrl('https://github.com/signup')
+
+'Step 2: Enter an invalid email in the Enter your email textbox'
+String str_value_id_inp = 'email'
+WebUI.setText(findTestObject('dynamic_by_id_in_inp',[('id_value_in_input'):str_value_id_inp]), email)
+
+'Step 3: delay for 3 seconds to see the msg'
+WebUI.delay(5)
+
+'Step 4: verify that the error msg is displayed'
+WebUI.verifyTextPresent(msg_expected, false)
+
+'Step 5: take the screenshot'
+WebUI.takeScreenshot()
