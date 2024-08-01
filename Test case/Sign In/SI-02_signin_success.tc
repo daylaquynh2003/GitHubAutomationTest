@@ -1,9 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the user sign in successfully with valid account</description>
-   <name>SI-02_signin_success</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>953124f1-6f20-43a7-9b59-eaa7ac643088</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+//'Step 1: open Chrome browser'
+//WebUI.openBrowser('')
+//'Step 2: navigate to github.com/login'
+//WebUI.navigateToUrl('https://github.com/login')
+//'Step 3: maximizeWindow'
+//WebUI.maximizeWindow()
+'SI-02: Verify that the user sign in successfully with valid account'
+
+'Step 1: Enter a valid userame in the Username or email address textbox'
+String str1_value_id_inp = 'login_field'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str1_value_id_inp]), 'chillcunglang2')
+
+'Step 2: Enter a valid password in the Password textbox'
+String str2_value_id_inp = 'password'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str2_value_id_inp]), 'th1s+1s+pass')
+
+'Step 3: click the Sign in btn'
+String str1_value_name_inp = 'commit'
+
+WebUI.click(findTestObject('dynamic_by_name_in_inp', [('name_value_in_inp') : str1_value_name_inp]))
+
+'Step 4: delay for 3 seconds'
+WebUI.delay(3)
+
+'Step 5: verify that the Homepage is displayed'
+String str_value_containstext_h2 = 'Home'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_contains-text_in_h2', [('containstext_value_in_h2') : str_value_containstext_h2]), 
+    0)
+'Step 6: take the screenshot'
+WebUI.takeScreenshot()
+'Step 7 - Sign out: Click the avatar'
+String str_value_containsscr_img = 'https://avatars.githubusercontent.com/u/175701301?v=4'
+
+WebUI.click(findTestObject('dynamic_by_contains-scr_in_img', [('containsscr_value_in_img') : str_value_containsscr_img]))
+
+'Step 8: click the sign out option'
+String str_value_id_span = ':rv:--label'
+
+WebUI.click(findTestObject('dynamic_by_id_in_span', [('id_value_in_span') : str_value_id_span]))
+
+'Step 9: Click the sign out button to really sign out'
+String str2_value_name_inp = 'commit'
+
+WebUI.click(findTestObject('dynamic_by_name_in_inp', [('name_value_in_inp') : str2_value_name_inp]))
+
