@@ -1,9 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the &quot;Continue&quot; button works when the values ​​entered in the required fields are valid</description>
-   <name>SU-02_Verify_btn_continue_inwork</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b8e77a5f-d77f-49e3-9779-1aee5856dad7</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+//WebUI.openBrowser('')
+//
+//WebUI.navigateToUrl('https://github.com/signup')
+//
+//WebUI.maximizeWindow()
+'SU-02:verify that the continue button works when the value entered in the required fields are valid'
+
+'Step 1: Verify that the btn Continue does not light up'
+String str1_value_datacontinueto_btn = 'password-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str1_value_datacontinueto_btn]), 
+    0)
+
+'Step 2: Enter a valid email address in the Enter your email textbox'
+String str1_value_id_inp = 'email'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str1_value_id_inp]), 'quynhtestgit1@gmail.com')
+
+'Step 3: Verify that the btn Continue lights up '
+String str2_value_datacontinueto_btn = 'password-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str2_value_datacontinueto_btn]), 
+    0)
+'Step 4: take the screenshot'
+WebUI.takeScreenshot()
+'Step 5: Verify that the Create a password label is display'
+String str3_value_id_div_div_label = 'password-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div-label', [('id_value_in_div-div-label') : str3_value_id_div_div_label]), 
+    0)
+'Step 6: take the screenshot'
+WebUI.takeScreenshot()
+'Step 7: Click the btn Continue to move to the password field'
+String str3_value_datacontinueto_btn = 'password-container'
+
+WebUI.click(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str3_value_datacontinueto_btn]))
+
+'Step 8: Enter a valid password in the Create a password textbox'
+String str2_value_id_inp = 'password'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str2_value_id_inp]), 'th1s+is+pass')
+
+'Step 9: Verify that the btn Continue lights up'
+String str4_value_datacontinueto_btn = 'username-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str4_value_datacontinueto_btn]), 
+    0)
+'Step 10: take the screenshot'
+WebUI.takeScreenshot()
+'Step 11: Verify that the Enter a username label is display'
+String str4_value_id_div_div_label = 'username-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div-label', [('id_value_in_div-div-label') : str4_value_id_div_div_label]), 
+    0)
+'Step 12: take the screenshot'
+WebUI.takeScreenshot()
+'Step 13: Click the btn Continue to move to the Enter a username field'
+String str5_value_datacontinueto_btn = 'username-container'
+
+WebUI.click(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str5_value_datacontinueto_btn]))
+
+'Step 14: Enter a valid username in the Enter a username textbox'
+String str3_value_id_inp = 'login'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str3_value_id_inp]), 'quynhtestgit1')
+
+'Step 15: Verify that the btn Continue lights up'
+String str6_value_datacontinueto_btn = 'opt-in-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str6_value_datacontinueto_btn]), 
+    0)
+'Step 16: take the screenshot'
+WebUI.takeScreenshot()
+'Step 17: Verify that the Email preferences label is display'
+String str5_value_id_div_div_label = 'opt-in-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div-label', [('id_value_in_div-div-label') : str5_value_id_div_div_label]), 
+    0)
+'Step 18: take the screenshot'
+WebUI.takeScreenshot()
+'Step 19: Verify that the btn Continue lights up'
+String str7_value_datacontinueto_btn = 'captcha-and-submit-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str7_value_datacontinueto_btn]), 
+    0)
+
+'Step 20: take the screenshot'
+WebUI.takeScreenshot()
+
