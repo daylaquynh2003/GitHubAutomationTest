@@ -1,35 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the value contains the characters ., -, _  is not converted to one hyphen</description>
-   <name>CR-06_verify character is not coverted to hyphen</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>0d778814-110d-4319-8543-8b586fa1f5b1</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>010ff945-22a7-41df-90cd-ec97bab47e12</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>25ddddde-e9aa-4c99-8e12-0af17926412d</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>010ff945-22a7-41df-90cd-ec97bab47e12</id>
-      <masked>false</masked>
-      <name>repo_name</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>25ddddde-e9aa-4c99-8e12-0af17926412d</id>
-      <masked>false</masked>
-      <name>msg_expected</name>
-   </variable>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'CR-06: Verify that the value contains the characters ., -, _  is not converted to one hyphen'
+
+//'Step 1: call test case SI-02 to SignIn'
+//WebUI.callTestCase(findTestCase('Calltest_SI-02-Signin success'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Step 2: Click the New btn'
+//String str_value_btn = 'New'
+//
+//WebUI.click(findTestObject('null', [('name_btn') : str_value_btn]))
+//
+//'Step 3: Verify that the system navigates to the "Create a new repository" page'
+//WebUI.verifyElementPresent(findTestObject('null'), 
+//    0)
+'Step 1: rollback to create repository page'
+WebUI.navigateToUrl('https://github.com/new')
+
+'Step 2: Click the Owner list'
+String value1_containstext_span = 'Choose an owner'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : value1_containstext_span]))
+
+'Step 3: Select one option'
+String value2_containstext_span = 'chillcunglang2'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : value2_containstext_span]))
+
+'Step 4: Enter a value can be converted to hyphen in the repository name textbox'
+String str_value_class_span_inp = 'TextInputWrapper__TextInputBaseWrapper-sc-1mqhpbi-0 TextInputWrapper-sc-1mqhpbi-1 LWeZl cYukEn TextInput-wrapper'
+
+WebUI.setText(findTestObject('dynamic_by_class_in_span-inp', [('class_value_in_span-inp') : str_value_class_span_inp]), 
+    repo_name)
+
+'Step 5: delay for 3 seconds'
+WebUI.delay(3)
+
+'Step 6: verify that value entered is not converted to hyphen'
+WebUI.verifyTextPresent(msg_expected, false)
+
+'Step 7: take the screenshot'
+WebUI.takeScreenshot()
+
