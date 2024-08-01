@@ -1,9 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the user can sign up successfully after entering valid input values and account is verified</description>
-   <name>SU-06_verify_Signup_success</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>55857c27-1ed3-4a46-8441-4d07c6a323ea</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+//WebUI.openBrowser('')
+//
+//WebUI.navigateToUrl('https://github.com/signup')
+//
+//WebUI.maximizeWindow()
+'SU-06:Verify that the user can sign up successfully after entering valid input values'
+
+'Step 1: Verify that the Continue btn does not light up'
+String str1_value_datacontinueto_btn = 'password-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str1_value_datacontinueto_btn]), 
+    0)
+
+'Step 2: Enter a valid email in the Enter your email textbox'
+String str1_value_id_inp = 'email'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str1_value_id_inp]), 'quynhtestgit1@gmail.com')
+
+'Step 3: Verify that the Create a password label is displayed'
+String str1_value_id_div_div_label = 'password-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div-label', [('id_value_in_div-div-label') : str1_value_id_div_div_label]), 
+    0)
+'Step 4: take the screenshot'
+WebUI.takeScreenshot()
+'Step 5: click the Continue btn to move to the Create a password textbox'
+String str2_value_datacontinueto_btn = 'password-container'
+
+WebUI.click(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str2_value_datacontinueto_btn]))
+
+'Step 6: Enter a valid password in the Create a password textbox'
+String str2_value_id_inp = 'password'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str2_value_id_inp]), 'th1s+is+pass')
+
+'Step 7: Verify that the Enter a username label is displayed'
+String str2_value_id_div_div_label = 'username-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div-label', [('id_value_in_div-div-label') : str2_value_id_div_div_label]), 
+    0)
+'Step 8: take the screenshot'
+WebUI.takeScreenshot()
+'Step 9: click the Continue btn to move to the Enter a username textbox'
+String str3_value_datacontinueto_btn = 'username-container'
+
+WebUI.click(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str3_value_datacontinueto_btn]))
+
+'Step 10: Enter a valid username in the Enter a username textbox'
+String str3_value_id_inp = 'login'
+
+WebUI.setText(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str3_value_id_inp]), 'quynhtestgit1')
+
+'Step 11: Verify that the username entered is available'
+String str1_value_id_p = 'login-err'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_p', [('id_value_in_p') : str1_value_id_p]), 0)
+'Step 12: take the screenshot'
+WebUI.takeScreenshot()
+'Step 13: click the Continue btn to see the Receive occasional product updates and announcements label'
+String str4_value_datacontinueto_btn = 'opt-in-container'
+
+WebUI.click(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str4_value_datacontinueto_btn]))
+
+'Step 14: Verify that the Email preferences label is display'
+String str3_value_id_div_div_label = 'opt-in-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div-label', [('id_value_in_div-div-label') : str3_value_id_div_div_label]), 
+    0)
+
+'Step 15: Verify that the checkbox is displayed'
+String str4_value_id_inp = 'opt_in'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str4_value_id_inp]), 0)
+
+'Step 16: Tick the checkbox'
+String str5_value_id_inp = 'opt_in'
+
+WebUI.check(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str5_value_id_inp]), FailureHandling.STOP_ON_FAILURE)
+
+'Step 17: Verify that the checkbox was ticked'
+String str6_value_id_inp = 'opt_in'
+
+WebUI.verifyElementChecked(findTestObject('dynamic_by_id_in_inp', [('id_value_in_input') : str6_value_id_inp]), 0)
+'Step 18: take the screenshot'
+WebUI.takeScreenshot()
+'Step 19: click the Continue btn to move to the Verify_your_account page'
+String str5_value_datacontinueto_btn = 'captcha-and-submit-container'
+
+WebUI.click(findTestObject('dynamic_by_data-continue-to_in_btn', [('data-continue-to_value_in_btn') : str5_value_datacontinueto_btn]))
+
+'Step 20: verify that the Verify_your_account page is display'
+String str1_value_id_div_div = 'captcha-and-submit-container'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_div-div', [('id_value_in_div-div') : str1_value_id_div_div]), 
+    0)
+'Step 21: take the screenshot'
+WebUI.takeScreenshot()
+
