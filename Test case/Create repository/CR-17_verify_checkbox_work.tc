@@ -1,9 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the &quot;Add a README file&quot; checkbox work correctly</description>
-   <name>CR-17_verify_checkbox_work</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8ff58dff-128a-4baf-a0e8-f8f56fbacf43</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'CR-17: Verify that the "Add a README file" checkbox work correctly'
+
+//'Step 1: call test case SI-02 to SignIn'
+//WebUI.callTestCase(findTestCase('Calltest_SI-02-Signin success'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Step 2: Click the new btn'
+//String str_value_btn = 'New'
+//
+//WebUI.click(findTestObject('null', [('name_btn') : str_value_btn]))
+//
+//'Step 3: Verify that the system navigates to the "Create a new repository" page'
+//WebUI.verifyElementPresent(findTestObject('null'), 
+//    0)
+'Step 1: rollback to create repository page'
+WebUI.navigateToUrl('https://github.com/new')
+
+'Step 2: Click the Owner list'
+String value1_containstext_span = 'Choose an owner'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : value1_containstext_span]))
+
+'Step 3: Select one option'
+String value2_containstext_span = 'chillcunglang2'
+
+WebUI.click(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : value2_containstext_span]))
+
+'Step 4: Tick the "Add a README file" checkbox'
+String str_value_class_inp = 'Checkbox__StyledCheckbox-sc-1ga3qj3-0 dAJPko'
+
+WebUI.check(findTestObject('dynamic_by_class_in_inp', [('class_value_in_inp') : str_value_class_inp]))
+
+'Step 5: Verify that the message: "This will set main as the default branch. Change the default name in your settings." is display and the checkbox that is ticked has a change state'
+String str_value_containstext_span = 'This will set'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_contains-text_in_span', [('containstext_value_in_span') : str_value_containstext_span]), 
+    0)
+
+'Step 6: take the screenshot'
+WebUI.takeScreenshot()
+
