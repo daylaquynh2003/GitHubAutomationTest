@@ -1,9 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the &quot;Learn more about licenses&quot; linktext there is activity</description>
-   <name>CR-22_verify_linktext_work</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ccb08825-fe69-4ee4-9ca4-2f347e8df13f</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+'CR-22:Verify that the "Learn more about licenses" linktext there is activity'
+//'Step 1: call test case SI-02 to SignIn'
+//WebUI.callTestCase(findTestCase('Calltest_SI-02-Signin success'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Step 2: Click the New btn'
+//String str_value_btn = 'New'
+//WebUI.click(findTestObject('null',[('name_btn'):str_value_btn]))
+//
+//'Step 3: Verify that the system navigates to the "Create a new repository" page'
+//WebUI.verifyElementPresent(findTestObject('null'), 
+//    0)
+'Step 1: rollback to create repository page'
+WebUI.navigateToUrl('https://github.com/new')
+
+'Step 2: click the Learn more about licenses linktext'
+String str_value_containstext_a = 'Learn more about licenses.'
+WebUI.click(findTestObject('dynamic_by_contains-text_in_a',[('containstext_value_in_a'):str_value_containstext_a]))
+
+'Step 3: navigate to the expected url'
+WebUI.navigateToUrl('https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository', 
+    FailureHandling.STOP_ON_FAILURE)
+
+'Step 4: verify that the system navigates to the "Licensing a repository" screen'
+String str_value_id_h1 = 'title-h1'
+WebUI.verifyElementPresent(findTestObject('dynamic_by_id_in_h1',[('id_value_in_h1'):str_value_id_h1]), 0)
+'Step 5: take the screenshot'
+WebUI.takeScreenshot()
