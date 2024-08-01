@@ -1,9 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the Country dropdown list work correctly</description>
-   <name>CS-16_verify_Country dropdown list work correctly</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>879e5918-b496-479b-97f7-4b42a66fd791</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'CS-16: Verify that the Country dropdown list work correctly'
+
+'Step 1: Click in the Country dropdown list'
+String value_id_select = 'site_enterprise_contact_request_country'
+
+WebUI.click(findTestObject('dynamic_by_id_in_select',[('id_value_in_select'):value_id_select]))
+
+'Step 2: Select one option'
+String value_containstext_option = 'Vietnam'
+WebUI.click(findTestObject('dynamic_by_containstext_in_option',[('containstext_value_in_option'):value_containstext_option]))
+
+'Step 3: Verify that the selected option is displayed'
+WebUI.verifyTextPresent('Vietnam', false)
+
+'Step 4: take the screenshot'
+WebUI.takeScreenshot()
