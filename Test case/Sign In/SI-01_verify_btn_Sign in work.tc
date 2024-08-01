@@ -1,9 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Verify that the &quot;Sign in&quot; button is work correctly</description>
-   <name>SI-01_verify_btn_Sign in work</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>2a9d030d-a023-4ef4-b2d0-d1808e508150</testCaseGuid>
-</TestCaseEntity>
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+'SI-01: Verify that the "Sign in" button is work correctly'
+
+'Step 1: Navigate to github.com'
+WebUI.navigateToUrl('https://github.com/')
+
+'Step 2: maximizeWindow'
+WebUI.maximizeWindow()
+
+'Step 3: click the Sign in btn to move to the Sign in page'
+WebUI.click(findTestObject('SI/static_href_btn_for_SI-01'))
+
+'Step 4: verify that the Sign in page is displayed'
+String str_value_containstext_h1 = 'Sign in to GitHub'
+WebUI.verifyElementPresent(findTestObject('dynamic_by_contains-text_in_h1', [('containstext_value_in_h1') : str_value_containstext_h1]), 
+    0)
+
+'Step 5: take the screenshot'
+WebUI.takeScreenshot()
