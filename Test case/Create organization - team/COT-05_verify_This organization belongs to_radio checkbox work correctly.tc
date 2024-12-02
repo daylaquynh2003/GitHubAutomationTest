@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;This organization belongs to:&quot; radio checkbox work correctly</description>
+   <name>COT-05_verify_This organization belongs to_radio checkbox work correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f357ac61-2131-4156-9525-049b345e2a97</testCaseGuid>
+</TestCaseEntity>

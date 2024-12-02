@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Next:Payment details&quot; button works correctly</description>
+   <name>COT-12_verify_NextPayment details_button works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9aa6b2f3-502e-432e-a2c1-5a91eef819d1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a8362b04-00c9-413d-9602-84320739c040</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a8362b04-00c9-413d-9602-84320739c040</id>
+      <masked>false</masked>
+      <name>organization_name</name>
+   </variable>
+</TestCaseEntity>

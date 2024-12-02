@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Terms of Service&quot; linktext works correctly</description>
+   <name>COT-09_verify_Terms of Service_linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>30dc27f6-171a-4708-8da6-3276d73a7a16</testCaseGuid>
+</TestCaseEntity>

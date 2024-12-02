@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;GitHub Privacy Statement&quot; linktext works correctly</description>
+   <name>COT-10_verify_GitHub Privacy Statement_linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>375a3885-e886-45ff-b1d6-6b8696c4f719</testCaseGuid>
+</TestCaseEntity>
