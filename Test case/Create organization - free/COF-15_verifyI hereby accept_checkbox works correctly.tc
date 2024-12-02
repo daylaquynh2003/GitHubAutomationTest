@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;I hereby accept ....GitHub Privacy Statement.&quot; checkbox works correctly</description>
+   <name>COF-15_verifyI hereby accept_checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1b9481af-18d8-468c-b599-6cdee23a24e7</testCaseGuid>
+</TestCaseEntity>

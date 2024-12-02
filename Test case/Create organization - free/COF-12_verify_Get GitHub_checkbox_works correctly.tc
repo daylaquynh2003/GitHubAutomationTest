@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Get GitHub Copilot Business in this organization&quot; checkbox works correctly</description>
+   <name>COF-12_verify_Get GitHub_checkbox_works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b0b4a57d-3833-40d7-8235-d9126be3c744</testCaseGuid>
+</TestCaseEntity>

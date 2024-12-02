@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that Create the free organization failed by invalid value in the Contact email textbox</description>
+   <name>COF-07_verify_COF_failed_by_Contact email_invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d45e3f0d-3f39-426b-9853-b5efa8e11b5d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ddc7e2de-7eda-4c77-a748-d1ac269bc12a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ddc7e2de-7eda-4c77-a748-d1ac269bc12a</id>
+      <masked>false</masked>
+      <name>Contact_email</name>
+   </variable>
+</TestCaseEntity>

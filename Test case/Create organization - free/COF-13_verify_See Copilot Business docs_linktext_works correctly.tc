@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;See Copilot Business docs.&quot; linktext works correctly</description>
+   <name>COF-13_verify_See Copilot Business docs_linktext_works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>92545b68-38f2-47f0-9be0-587e6d2af52a</testCaseGuid>
+</TestCaseEntity>

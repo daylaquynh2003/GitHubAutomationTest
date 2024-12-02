@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that Create the free organization failed by invalid value in the Organization name textbox</description>
+   <name>COF-04_verify_COF_failed_by_Organization name_invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fb0a2c15-d38a-449f-b459-c2ce526794a1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>80ad4beb-a76d-4b29-8a1d-a12d97fa0395</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94d9a034-5dc0-4a64-b9be-0c75f4c28050</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>80ad4beb-a76d-4b29-8a1d-a12d97fa0395</id>
+      <masked>false</masked>
+      <name>organization_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>94d9a034-5dc0-4a64-b9be-0c75f4c28050</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

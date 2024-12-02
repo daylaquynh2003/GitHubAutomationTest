@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that Create the free organization successfully by valid value in the Organization name textbox</description>
+   <name>COF-03_verify_COF_success_by_organization_name</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9fb25472-c2d1-404e-b547-2940d095a5b2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3eb5fc9c-ba8f-46d7-ab69-0c11a024a673</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>87a6fb85-1def-4194-9da0-39c3263f55eb</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3eb5fc9c-ba8f-46d7-ab69-0c11a024a673</id>
+      <masked>false</masked>
+      <name>organization_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>87a6fb85-1def-4194-9da0-39c3263f55eb</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

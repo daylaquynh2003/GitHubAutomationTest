@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;GitHub Customer Agreement&quot; linktext works correctly</description>
+   <name>COF-16_verify_GitHub Customer Agreement linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dafa2982-3abc-4e87-b1b3-a493dc0ee413</testCaseGuid>
+</TestCaseEntity>
