@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the search function can find relevant results according to the &quot;User&quot; filter</description>
+   <name>SE-07_verify_display_true_results_using_User_filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d87005bb-d159-492d-873e-36830076d470</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>11f0c0b1-4500-464c-8e28-66d182f82e50</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>11f0c0b1-4500-464c-8e28-66d182f82e50</id>
+      <masked>false</masked>
+      <name>text_find</name>
+   </variable>
+</TestCaseEntity>

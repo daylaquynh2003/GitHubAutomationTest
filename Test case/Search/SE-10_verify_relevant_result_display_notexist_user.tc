@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that relevant results are displayed with username is not already exists</description>
+   <name>SE-10_verify_relevant_result_display_notexist_user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d17e904c-be7b-4401-bc68-fa15d2e962d5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aa52fb4b-b6bf-40ce-b7fe-7031e2c94693</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aa52fb4b-b6bf-40ce-b7fe-7031e2c94693</id>
+      <masked>false</masked>
+      <name>text_find</name>
+   </variable>
+</TestCaseEntity>

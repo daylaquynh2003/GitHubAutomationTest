@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;documentation&quot; link is active</description>
+   <name>SE-16_verify_linktext_documentation_active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>29036a4d-37ae-431c-862a-16dc7bed6857</testCaseGuid>
+</TestCaseEntity>

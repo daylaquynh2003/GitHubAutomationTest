@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Give feedback&quot; link is active</description>
+   <name>SE-03_verify_Give feedback_link_active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d1d9b02d-c586-4581-a5c5-cd7e966c0eaf</testCaseGuid>
+</TestCaseEntity>

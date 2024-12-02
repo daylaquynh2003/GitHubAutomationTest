@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Search syntax tips&quot; link is active</description>
+   <name>SE-02_verify_Search syntax tips_link_active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a480fe75-de21-4ca2-ab93-d8a8d0ac8319</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Sort by&quot; dropdown work correctly</description>
+   <name>SE-13_verify-sortby_dropbox_work_correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>811716f6-4d8a-4106-8448-f0b45128b9c2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d41081dc-d96d-40e5-9698-98e228be797d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d41081dc-d96d-40e5-9698-98e228be797d</id>
+      <masked>false</masked>
+      <name>text_find</name>
+   </variable>
+</TestCaseEntity>

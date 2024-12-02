@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Create saved search&quot; form is active true</description>
+   <name>SE-15_verify_form_active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0707bc9f-2fbe-42d3-ad7a-996f4c241629</testCaseGuid>
+</TestCaseEntity>

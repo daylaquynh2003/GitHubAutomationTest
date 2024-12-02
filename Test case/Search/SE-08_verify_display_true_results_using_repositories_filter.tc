@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the search function can find relevant results according to the &quot;Repositories&quot; filter</description>
+   <name>SE-08_verify_display_true_results_using_repositories_filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a4ff3172-b0d5-481d-8195-23c98045aab2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>368fa112-42ea-4cc1-95d8-9c8024418375</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>368fa112-42ea-4cc1-95d8-9c8024418375</id>
+      <masked>false</masked>
+      <name>text_find</name>
+   </variable>
+</TestCaseEntity>

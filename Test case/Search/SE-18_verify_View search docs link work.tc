@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;View search docs&quot; link is active true</description>
+   <name>SE-18_verify_View search docs link work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>12970211-0efd-44ad-b94b-9c5198057451</testCaseGuid>
+</TestCaseEntity>

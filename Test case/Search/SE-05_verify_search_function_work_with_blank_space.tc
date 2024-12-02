@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the search function work when enter blank or space</description>
+   <name>SE-05_verify_search_function_work_with_blank_space</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a71a1853-cb94-4aba-b572-083af2896014</testCaseGuid>
+</TestCaseEntity>

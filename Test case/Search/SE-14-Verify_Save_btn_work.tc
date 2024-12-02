@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Save&quot; button work correctly</description>
+   <name>SE-14-Verify_Save_btn_work</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7c31b28b-005d-4882-ab50-8343e22f0bf1</testCaseGuid>
+</TestCaseEntity>

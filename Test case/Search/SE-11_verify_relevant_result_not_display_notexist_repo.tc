@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that relevant results are displayed when entering an invalid repositories</description>
+   <name>SE-11_verify_relevant_result_not_display_notexist_repo</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>889b9843-cbbd-4e20-8432-4fd2dc679393</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>725835f7-b053-4d00-ac21-528fa3ddf743</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>725835f7-b053-4d00-ac21-528fa3ddf743</id>
+      <masked>false</masked>
+      <name>text_find</name>
+   </variable>
+</TestCaseEntity>
