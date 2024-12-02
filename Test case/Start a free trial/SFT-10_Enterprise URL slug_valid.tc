@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SFT-10_Enterprise URL slug_valid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80bb9a30-0da9-4d21-a1ac-f911ddeed061</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95c346cc-2f06-44f9-b272-e14532ed1e86</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c66bbe4f-346a-410b-8511-f2bdb5b3e5c6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>95c346cc-2f06-44f9-b272-e14532ed1e86</id>
+      <masked>false</masked>
+      <name>url_slug</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c66bbe4f-346a-410b-8511-f2bdb5b3e5c6</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

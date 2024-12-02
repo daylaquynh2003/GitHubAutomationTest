@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Do you have any other questions about GitHub Enterprise?&quot; radio checkbox works correctly</description>
+   <name>SFT-52_verify_Do you have any other questions about GitHub Enterprise radio checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>16f17131-f766-4b01-be90-1499b0a8881f</testCaseGuid>
+</TestCaseEntity>

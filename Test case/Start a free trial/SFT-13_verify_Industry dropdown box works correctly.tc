@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Industry&quot; dropdown box works correctly</description>
+   <name>SFT-13_verify_Industry dropdown box works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fa3c3705-9e47-4cbe-b304-a3dbba2f304d</testCaseGuid>
+</TestCaseEntity>

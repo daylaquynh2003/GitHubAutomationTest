@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Choose your installation type&quot; radio checkbox works correctly</description>
+   <name>SFT-51_verify_Choose your installation type radio checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f908aae0-b719-418d-8a54-1be11dd8d568</testCaseGuid>
+</TestCaseEntity>

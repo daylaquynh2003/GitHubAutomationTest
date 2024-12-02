@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;GitHub Privacy Statement&quot; linktext works correctly</description>
+   <name>SFT-33_verify_GitHub Privacy Statement linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b7e1a6f4-350f-4e83-a05c-4675c9a8b6ec</testCaseGuid>
+</TestCaseEntity>

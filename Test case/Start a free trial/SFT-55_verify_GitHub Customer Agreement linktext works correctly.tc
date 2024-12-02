@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;GitHub Customer Agreement &quot; linktext works correctly</description>
+   <name>SFT-55_verify_GitHub Customer Agreement linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>84cec031-0a07-4038-a4cf-bd823ae8fdfd</testCaseGuid>
+</TestCaseEntity>

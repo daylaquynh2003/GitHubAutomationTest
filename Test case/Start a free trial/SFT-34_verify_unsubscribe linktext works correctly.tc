@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;unsubscribe&quot; linktext works correctly</description>
+   <name>SFT-34_verify_unsubscribe linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e71b8810-42c7-4ddb-8e9a-3676fa355cb3</testCaseGuid>
+</TestCaseEntity>

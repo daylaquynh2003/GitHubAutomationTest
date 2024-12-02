@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Enterprise Cloud&quot; tag works correctly</description>
+   <name>SFT-02_verify_Enterprise Cloud tag works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b92d3e83-0b45-42e4-8d04-c67ce63a4c8e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Accept terms of use&quot; checkbox works correctly</description>
+   <name>SFT-54_verify_Accept terms of use checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b8b68a74-35d5-4733-9d32-0c706ea81613</testCaseGuid>
+</TestCaseEntity>

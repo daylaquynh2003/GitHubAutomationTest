@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Enterprise Server&quot; tag works correctly</description>
+   <name>SFT-03_verify Enterprise Server tag works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3c089b87-cac5-446c-b5e2-27b5e28fe84f</testCaseGuid>
+</TestCaseEntity>

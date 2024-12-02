@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Learn about changes to your billing during trial&quot; linktext works correctly</description>
+   <name>SFT-17_verify_Learn about changes to your billing during trial linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b068da62-8cdd-4cae-8961-f68c1cfadfae</testCaseGuid>
+</TestCaseEntity>

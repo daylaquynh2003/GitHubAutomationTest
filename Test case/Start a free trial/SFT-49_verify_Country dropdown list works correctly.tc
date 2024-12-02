@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Country&quot; dropdown list works correctly</description>
+   <name>SFT-49_verify_Country dropdown list works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dc05d505-dcad-4bdb-9e80-74f09ed42334</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Try Enterprise Cloud free for 30 days&quot; action failed by invalid value in the &quot;Work email&quot; textbox</description>
+   <name>SFT-23_verify_Work email_invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>04a3ebbe-0f5c-41fe-acf5-3df3a41d0b7d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ffb6750f-f829-43eb-9ac5-d71655581e86</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3c0c9b9b-1ead-4f85-b5cc-a08ea0fc7df7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ffb6750f-f829-43eb-9ac5-d71655581e86</id>
+      <masked>false</masked>
+      <name>work_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3c0c9b9b-1ead-4f85-b5cc-a08ea0fc7df7</id>
+      <masked>false</masked>
+      <name>msg_expected</name>
+   </variable>
+</TestCaseEntity>

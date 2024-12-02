@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;I understand that certain features are unavailable during the trial experience.&quot; checkbox works correctly</description>
+   <name>SFT-27_verify_I understand that certain_checkbox_works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d544a841-0fc5-4f1c-9aaa-5143919dd5dd</testCaseGuid>
+</TestCaseEntity>

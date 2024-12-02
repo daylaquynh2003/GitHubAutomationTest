@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Organization&quot; dropdown box works correctly</description>
+   <name>SFT-16_verify_Organization dropdown box works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f841cd4-e477-497d-91e4-a9cb509dff57</testCaseGuid>
+</TestCaseEntity>

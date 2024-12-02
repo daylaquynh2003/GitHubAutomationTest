@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Contact Sales Team&quot; button works correctly</description>
+   <name>SFT-61_verify_Contact Sales Team button works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a6dea4e4-7f2c-44bd-9067-adea16f9b4cd</testCaseGuid>
+</TestCaseEntity>

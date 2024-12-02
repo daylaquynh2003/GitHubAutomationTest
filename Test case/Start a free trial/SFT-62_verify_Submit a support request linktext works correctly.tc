@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Submit a support request&quot; linktext works correctly</description>
+   <name>SFT-62_verify_Submit a support request linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2b6c79a0-156a-464d-9253-7f5e5c1f75d4</testCaseGuid>
+</TestCaseEntity>

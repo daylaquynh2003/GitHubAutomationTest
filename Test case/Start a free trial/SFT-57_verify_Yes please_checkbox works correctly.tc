@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Yes please, I’d like...for more details.&quot; checkbox works correctly</description>
+   <name>SFT-57_verify_Yes please_checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a22ab22-92c4-4952-9977-7978b18ad61c</testCaseGuid>
+</TestCaseEntity>

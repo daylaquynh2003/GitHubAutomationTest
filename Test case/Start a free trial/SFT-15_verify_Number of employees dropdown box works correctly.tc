@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Number of employees&quot; dropdown box works correctly</description>
+   <name>SFT-15_verify_Number of employees dropdown box works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38351d7e-fa79-4ada-a73b-298c83967909</testCaseGuid>
+</TestCaseEntity>

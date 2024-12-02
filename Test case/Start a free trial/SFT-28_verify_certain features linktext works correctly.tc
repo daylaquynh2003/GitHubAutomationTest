@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;certain features&quot; linktext works correctly</description>
+   <name>SFT-28_verify_certain features linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bb716284-4aad-4fef-931d-b5f0c9756073</testCaseGuid>
+</TestCaseEntity>

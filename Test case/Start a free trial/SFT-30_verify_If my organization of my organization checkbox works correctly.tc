@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;If my organization...of my organization.&quot; checkbox works correctly</description>
+   <name>SFT-30_verify_If my organization of my organization checkbox works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6d91996b-0b9b-4a15-af07-318ab2dff618</testCaseGuid>
+</TestCaseEntity>

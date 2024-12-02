@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify that the &quot;Enterprise documentation&quot; linktext works correctly</description>
+   <name>SFT-63_verify_Enterprise documentation linktext works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7b150528-6b97-4aa6-9dcc-912bc4258842</testCaseGuid>
+</TestCaseEntity>
