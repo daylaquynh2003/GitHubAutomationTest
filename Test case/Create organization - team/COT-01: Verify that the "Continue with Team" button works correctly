@@ -1,0 +1,42 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+'COT-01: Verify that the "Continue with Team" button works correctly'
+//'Step 1: call testcase to login'
+//WebUI.callTestCase(findTestCase('Calltest_SI-02-Signin success'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//'Step 2: navigate to github.com/pricing'
+//WebUI.navigateToUrl('https://github.com/pricing')
+//
+//'Step 3: Click the "Continue with Team" button'
+//String value_containstext_summary = 'Continue with Team'
+//WebUI.click(findTestObject('dynamic_by_containstext_in_summary',[('containstext_value_in_summary'): value_containstext_summary]))
+//
+//'Step 4: Click the "Create organization" option'
+//String value_containstext_span = 'Create organization'
+//WebUI.click(findTestObject('dynamic_by_contains-text_in_span',[('containstext_value_in_span'):value_containstext_span]))
+
+
+'Step 1: Verify that the system navigate to the "Set up your organization" screen'
+String value_containstext_h1 = 'Set up your organization'
+
+WebUI.verifyElementPresent(findTestObject('dynamic_by_contains-text_in_h1', [('containstext_value_in_h1') : value_containstext_h1]), 
+    0)
+'Step 2: take the screenshot'
+WebUI.takeScreenshot()
